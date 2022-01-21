@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marcin</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script type="text/javascript" src="dzialanie.js"></script>
+  <script src="http://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+  </head>
+  <body onload="odliczanie();">
+
+
+<div class="zakladki"><table cellspacing="8">
+<tr>
+<td ><div><h1>POJAZD ZDALNIE STEROWANY</h1></td></div><td>
+  <div class= "Sterowanie">
+    <a class="ster" href="index.html"> Sterowanie</a></div></td>
+  <td><div class="Tryb serwisowy">
+    <a class="btn" href="Tryb serwisowy.html">Tryb serwisowy</a></div></td>
+  <td><div class="Dokumentacja">
+    <a class="dok" href="Dokumentacja techniczna.html">Dokumentacja techniczna</a></h1></div></td>
+  <td><div class= "Kontakt">
+    <a class="htw" href="Kontakt.html"> Dane Kontaktowe</a></td></div>
+    <td> <div id="zegar"class="zegar"></div></td></tr></table></div>
+<h3><table cellspacing=32 align=center>
+<tr>
+
+<td><div class="card"><p class="card-title">Napięcie silnika[V]</p><canvas id="napSil"></div></td>
+
+  <td> <div class="swiatla"><h2><p>ŚWIATŁA </p><h2>
+
+  <button class="on1" id="on">Włącz</button>
+  <button class="on2"id="off">Wyłącz</button><br></td></div>
+
+  <td><div class="card"><p class="card-title">Napięcie baterii [V]</p><canvas id="bateriaV"></div></td></tr></table>
+<table CELLPADDING=60  align=center id=counter><tr>
+<td>
+<div class="card">
+<p class="card-title">Obroty silnika</p>
+<canvas id="gauge-rotation"></canvas></div></td>
+<td><div class="card-grid">
+<div class="card"><p class="card-title">Temperatura </p>
+<canvas id="gauge-temperature"></canvas></div></td>
+<td><div class="card"><p class="card-title">Prędkość pojazdu</p>
+<canvas id="speed"></canvas></td></div></div></div></tr>
+<script src="dzialanie.js"></script></table></h3></body></html>
